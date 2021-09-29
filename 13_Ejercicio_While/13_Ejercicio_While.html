@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio While</title>
+</head>
+
+<body>
+    <script>
+        //Tu código aquí
+        let cuenta_atras; // Creamos una variable de número entero
+        cuenta_atras = 10; // Le asignamos el valor 10
+
+        while (cuenta_atras  >= 0) // Mientras el intento sea igual o mayor que el número de la cuenta atras
+        {
+            console.log(cuenta_atras); // Mostrar numero
+            if (cuenta_atras == 0) // Si es el final de la cuenta atras
+            {
+                console.log("Despegue!"); // Mostrar mensaje
+                break; // break hace que el código salga del bucle while (el código continua en la línea 39)
+            } 
+            cuenta_atras = cuenta_atras - 1; // Añadir 1 al intento
+        }
+    </script>
+</body>
+
+</html>

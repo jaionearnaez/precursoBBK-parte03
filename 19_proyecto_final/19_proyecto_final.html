@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo For 3</title>
+</head>
+
+<body>
+    <script>
+        let filas;
+        let columnas;
+        filas = parseInt(prompt("Introduce el numero de filas: ")); // Pide un número al usuario. Convierte lo que el usuario introduce a un número entero y lo guarda en la variable filas
+        columnas  = parseInt(prompt("Introduce el numero de columnas: ")); // Pide un número al usuario. Convierte lo que el usuario introduce a un número entero y lo guarda en la variable columnas
+        if ((filas>0)&&(columnas>0))
+        {
+            for (let fila=1;fila<=filas;fila=fila+1)
+            {
+                let resultado_fila="";
+                //console.log(resultado_fila);
+                for (let columna=1;columna<=columnas;columna=columna+1)
+                {
+                    if((fila%2==0) && (columna%2==0)){
+                        resultado_fila = resultado_fila + "O";
+                        //console.log("Opcion 1");
+                        //console.log("O");
+                    }else if((fila%2==0) && (columna%2!=0)){
+                        resultado_fila = resultado_fila + "X";
+                        //console.log("Opcion 2");
+                        //console.log("X");
+                    }else if((fila%2!=0) && (columna%2!=0)){
+                        resultado_fila = resultado_fila + "O";
+                        //console.log("Opcion 3");
+                        //console.log("O");
+                    }else if((fila%2!=0) && (columna%2==0)){
+                        resultado_fila =resultado_fila + "X";
+                        //console.log("Opcion 4");
+                        //console.log("X");
+                    }
+                }
+                console.log(resultado_fila);
+            }
+        }else{console.log("El numero de filas o columnas que has introducido no es correcto");}
+    </script>
+</body>
+
+</html>
